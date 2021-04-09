@@ -46,7 +46,7 @@ public class VendaBuilder {
 		return this;
 	}
 	
-	public Venda controi() {
+	public Venda constroi() {
 		return new Venda(comprador, documentoComprador, dataVenda, valorBruto, valorLiquido, descontos, produtos);
 	}
 }

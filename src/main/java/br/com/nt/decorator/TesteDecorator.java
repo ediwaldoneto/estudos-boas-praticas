@@ -15,7 +15,7 @@ public class TesteDecorator {
 		Desconto desconto = new TarifaAdministrativa(new MDR());
 
 		Venda venda = new VendaBuilder().paraComprador("Neto").comDocumento("8765432345")
-				.comProduto(new Produto("Geladeira", 6000.0)).naDataAtual().controi();
+				.comProduto(new Produto("Geladeira", 6000.0)).naDataAtual().constroi();
 		
 		LOGGER.info(desconto.calcula(venda));
 
